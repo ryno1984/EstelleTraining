@@ -456,7 +456,7 @@
   <main class="wrap">
     <header class="hero">
       <h1>Your Home Exercise Plan: Stronger, Leaner, More Energy</h1>
-      <p>Built for a 65-year-old beginner with specific medical history and upper-body limitations. Every day has a minimum option. Even a short session still counts.</p>
+      <p>Built for a beginner adult with specific medical history and upper-body limitations. Every day has a minimum option. Even a short session still counts.</p>
       <div class="pill-row">
         <span class="pill">RPE target: 2-4/10 (easy-moderate)</span>
         <span class="pill">Talk-test always</span>
@@ -494,7 +494,7 @@
       <article class="card">
         <h2>Medical Safety First</h2>
         <div class="callout danger">
-          It is strongly advised that you clear this plan with a trained healthcare professional before starting. This plan is structured around your specific medical history and current movement limitations using evidence-informed guidance from the American Cancer Society, American Heart Association (AHA), CDC, and WHO.
+          It is strongly advised that you clear this plan with a trained healthcare professional before starting. This plan is structured around your specific medical history and current movement limitations using evidence-informed guidance from recognized public health and rehabilitation organizations.
         </div>
         <ul class="list">
           <li>Stop immediately for chest pain, faintness, severe breathlessness, severe palpitations, new neurological symptoms, or sharp joint pain.</li>
@@ -543,13 +543,13 @@
           </select>
         </div>
         <div class="callout" id="week-focus-text" style="margin-top: 10px;">
-          Week 1 focus: build consistency, protect your left shoulder, and finish 3 sessions with good form.
+          Week 1 focus: build consistency, protect your shoulder, and finish 3 sessions with good form.
         </div>
         <div class="metrics">
           <div class="metric"><strong>Session Length Goal</strong><span class="value" id="week-minutes">10-18 min per session</span></div>
           <div class="metric"><strong>Strength Volume Goal</strong><span class="value" id="week-strength">1-2 sets, strict form, start upper body at 1kg</span></div>
           <div class="metric"><strong>Cardio Goal</strong><span class="value" id="week-cardio">10-15 min walk or bike, talk pace</span></div>
-          <div class="metric"><strong>This Week Success Marker</strong><span class="value" id="week-success">Weight trend stable/down, no shoulder pain spike, steady energy</span></div>
+          <div class="metric"><strong>This Week Success Marker</strong><span class="value" id="week-success">Weight trend stable/down, no upper-body pain spike, steady energy</span></div>
         </div>
       </article>
       <article class="card">
@@ -558,7 +558,7 @@
           <li><strong>RPE target:</strong> stay between <strong>2 and 4 out of 10</strong> for almost all work.</li>
           <li><strong>Pain target:</strong> stay between <strong>0 and 3 out of 10</strong> during and after training.</li>
           <li><strong>Breathing rule:</strong> if you cannot speak a full sentence, effort is too high for this phase.</li>
-          <li><strong>Shoulder/biceps rule:</strong> no overhead lifting and no loaded end-range shoulder flexion in this phase.</li>
+          <li><strong>Upper-body rule:</strong> no overhead lifting and no loaded end-range shoulder flexion in this phase.</li>
           <li><strong>Load rule:</strong> start upper-body dumbbells at <strong>1kg</strong>. Progress only after 2 pain-free weeks.</li>
         </ul>
         <div class="callout">
@@ -634,7 +634,7 @@
     <section class="panel" id="day1">
       <article class="card">
         <h2>Today A - Strength Base + Mobility</h2>
-        <p class="small">Goal: build safe strength, especially legs and core, while protecting the left shoulder.</p>
+        <p class="small">Goal: build safe strength, especially legs and core, while protecting the shoulder.</p>
         <div class="today-box">
           <h3>Minimum plan for today:</h3>
           <p class="today-min"><span id="d1-duration">12-20 min</span> total</p>
@@ -799,7 +799,7 @@
         <h2>Today B - Bike + Core + Shoulder Rehab</h2>
         <p class="small">Goal: improve fat-loss cardio base and shoulder stability with controlled low load.</p>
         <div class="callout warn">
-          <strong>Left shoulder/biceps safety filter:</strong> keep all arm work below shoulder height, keep elbow near body, no fast pulling, and start with 1kg maximum on left side.
+          <strong>Upper-body safety filter:</strong> keep all arm work below shoulder height, keep elbow near body, no fast pulling, and start with 1kg maximum on each side.
         </div>
         <div class="today-box">
           <h3>Minimum plan for today:</h3>
@@ -841,7 +841,7 @@
               <li><strong>Pull:</strong> Exhale and draw elbows back close to your ribs.</li>
               <li><strong>Pause:</strong> Hold 1 second, gently squeeze shoulder blades.</li>
               <li><strong>Return:</strong> Inhale and slowly extend arms back to start.</li>
-              <li><strong>Safety:</strong> Keep left elbow close to body, no jerking. Stop for shoulder pinch, biceps tendon pain, or instability.</li>
+              <li><strong>Safety:</strong> Keep elbow close to body, no jerking. Stop for shoulder pinch, tendon pain, or instability.</li>
             </ul>
             <div class="why">
               <p><strong>Targets:</strong> Mid-back (rhomboids/traps), lats, rear shoulder, scapular stabilizers.</p>
@@ -909,7 +909,7 @@
               <li><strong>Press:</strong> Back of hand gently presses outward into wall or light long-band tension.</li>
               <li><strong>Effort:</strong> Use only 30-40% effort, not maximal force.</li>
               <li><strong>Breathe:</strong> Keep normal breathing through the 10-20 second hold.</li>
-              <li><strong>Safety:</strong> Keep arm below shoulder height. Stop for sharp pain, popping, or biceps pulling sensation.</li>
+              <li><strong>Safety:</strong> Keep arm below shoulder height. Stop for sharp pain, popping, or pulling sensation.</li>
             </ul>
             <div class="why">
               <p><strong>Targets:</strong> Rotator cuff (especially external rotators) and shoulder joint stability.</p>
@@ -1149,7 +1149,7 @@
             <label class="done"><input type="checkbox" data-key="track-rhr" /> Resting heart rate logged</label><br />
             <label class="done"><input type="checkbox" data-key="track-bp" /> Blood pressure logged</label><br />
             <label class="done"><input type="checkbox" data-key="track-sleep" /> Sleep hours + quality logged</label><br />
-            <label class="done"><input type="checkbox" data-key="track-note" /> Notes logged (energy, pain spikes, shoulder/back)</label>
+            <label class="done"><input type="checkbox" data-key="track-note" /> Notes logged (energy, pain spikes, upper/lower body)</label>
           </div>
         </div>
       </article>
@@ -1277,11 +1277,11 @@
       function weekCfg(week) {
         if (week <= 2) {
           return {
-            focus: 'Weeks 1-2: build safe consistency, protect left shoulder/biceps, and keep effort easy.',
+            focus: 'Weeks 1-2: build safe consistency, protect upper body, and keep effort easy.',
             minutes: '10-18 min per session',
             strength: '1 set per exercise, upper body at 1kg or band-only',
             cardio: '10-15 min easy walk/cycle (talk pace)',
-            success: 'Complete 3 sessions/week with no shoulder pain spike',
+            success: 'Complete 3 sessions/week with no upper-body pain spike',
             d1: '12-20 min',
             d2: '15-25 min',
             d3: '15-25 min',
